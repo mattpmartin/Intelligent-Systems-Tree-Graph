@@ -69,9 +69,11 @@ public class Main {
 
                 System.out.print("Path to this node is");
 
+                System.out.print(" - " + thisNode.getName());
+
                 while(thisNode.getParent() != null){
-                    System.out.print(" - " + thisNode.getName());
                     thisNode = thisNode.getParent();
+                    System.out.print(" - " + thisNode.getName());
                 }
 
                 break;
